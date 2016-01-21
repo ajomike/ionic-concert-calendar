@@ -1,0 +1,11 @@
+<ion-view view-title="Upcoming Shows">
+  <ion-content class="padding">
+    <div class="card" ng-repeat="event in events">
+      <div class="item item-text-wrap">
+        <p>{{event.time | date:'fullDate'}}</p>
+        <p>{{event.artist}}</p>
+        <p>{{event.venue}}</p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
